@@ -1,5 +1,19 @@
 # sast2023 word game
 
+**目录**
+- [sast2023 word game](#sast2023-word-game)
+  - [简介](#简介)
+  - [环境依赖](#环境依赖)
+  - [运行方法](#运行方法)
+    - [图形化界面](#图形化界面)
+    - [命令行界面](#命令行界面)
+  - [游戏功能](#游戏功能)
+    - [支持上传题库](#支持上传题库)
+    - [支持指定文章](#支持指定文章)
+    - [支持文章下载](#支持文章下载)
+  - [部署](#部署)
+
+
 ## 简介
 
 本仓库是 2023 酒井科协暑培 Python 基础的课程作业。作业要求实现一个填词游戏。
@@ -9,7 +23,10 @@
 
 ## 环境依赖
 
-`streamlit == 1.24.1`
+[![python-version](https://img.shields.io/badge/Python-3.9%20or%20later-brightgreen.svg?style=flat-square)](https://www.python.org/)
+
+[![streamlit-version](https://img.shields.io/badge/Streamlit-1.24.1-blue.svg?style=flat-square)](https://github.com/streamlit/streamlit)
+
 
 ## 运行方法
 
@@ -79,6 +96,6 @@ python main_cmd.py -f example.json -ch "贵系日常"
 
 点击“下载本篇文章”按钮，能够以 `.txt` 格式下载生成的文章。
 
-## 补充说明
+## 部署
 
-本游戏也部署在了 Streamlit Community 上，可以通过 []() 来访问。
+本游戏也部署在了 Streamlit 平台上，可以通过 [word-game.streamlit.app](https://word-game.streamlit.app/) 访问。
