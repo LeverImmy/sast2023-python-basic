@@ -88,6 +88,8 @@ python main_cmd.py -f example.json -ch "贵系日常"
 }
 ```
 
+`example.json` 为一个具体的事例。
+
 ### 支持指定文章
 
 可以在下拉列表中选择题库中的文章，也可以让程序在题库中随机选择一篇。
