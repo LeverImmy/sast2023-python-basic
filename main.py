@@ -37,7 +37,7 @@ def read_articles(filename):
     """
     with open(filename, 'r', encoding="utf-8") as f:
         # TODO: 用 json 解析文件 f 里面的内容，存储到 data 中
-        data=json.load(f)
+        data = json.load(f)
     
     return data
 
@@ -74,7 +74,7 @@ def replace(article, keys):
     for i in range(len(keys)):
         # TODO: 将 article 中的 {{i}} 替换为 keys[i]
         # hint: 你可以用 str.replace() 函数，也可以尝试学习 re 库，用正则表达式替换
-        article=article.replace('{{' + str(i + 1) + '}}', keys[i])
+        article = article.replace('{{' + str(i + 1) + '}}', keys[i])
 
     return article
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
                 hints = item["hints"]
     else:
         # 随机选择文章
-        idx = random.randint(0, len(articles))
+        idx = random.randint(0, len(articles) - 1)
         title = articles[idx]["title"]
         article = articles[idx]["article"]
         hints = articles[idx]["hints"]
