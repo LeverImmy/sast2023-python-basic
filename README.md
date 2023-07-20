@@ -88,7 +88,7 @@ python main_cmd.py -f example.json -ch "贵系日常"
 }
 ```
 
-`example.json` 为一个具体的事例。
+`examples.json` 中包含了丰富的样例。
 
 ### 支持指定文章
 
