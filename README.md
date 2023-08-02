@@ -13,7 +13,6 @@
     - [支持文章下载](#支持文章下载)
   - [部署](#部署)
 
-
 ## 简介
 
 本仓库是 2023 酒井科协暑培 Python 基础的课程作业。作业要求实现一个填词游戏。
@@ -26,7 +25,6 @@
 [![python-version](https://img.shields.io/badge/Python-3.9%20or%20later-brightgreen.svg?style=flat-square)](https://www.python.org/)
 
 [![streamlit-version](https://img.shields.io/badge/Streamlit-1.24.1-blue.svg?style=flat-square)](https://github.com/streamlit/streamlit)
-
 
 ## 运行方法
 
