@@ -2,16 +2,8 @@ import argparse
 import json
 import random
 
-def parser_data():
-    """
-    从命令行读取用户参数
-    做出如下约定：
-    1. -f 为必选参数，表示输入题库文件
-    2. -ch 为可选参数，表示是否指定文章
-    ...
 
-    :return: 参数
-    """
+def parser_data():
     parser = argparse.ArgumentParser(
         prog="Word filling game",
         description="A simple game",
@@ -21,37 +13,19 @@ def parser_data():
     parser.add_argument("-f", "--file", help="题库文件", required=True)
     # TODO: 添加更多参数
     parser.add_argument("-ch", "--choose", help="是否指定文章", required=False)
-    
+
     args = parser.parse_args()
     return args
 
 
-
 def read_articles(filename):
-    """
-    读取题库文件
-
-    :param filename: 题库文件名
-
-    :return: 一个字典，题库内容
-    """
     with open(filename, 'r', encoding="utf-8") as f:
         # TODO: 用 json 解析文件 f 里面的内容，存储到 data 中
         data = json.load(f)
-    
     return data
 
 
-
 def get_inputs(hints):
-    """
-    获取用户输入
-
-    :param hints: 提示信息
-
-    :return: 用户输入的单词
-    """
-
     keys = []
     for hint in hints:
         print(f"请输入{hint}：")
@@ -101,7 +75,7 @@ if __name__ == "__main__":
         hints = articles[idx]["hints"]
 
     user_keys = []
-    
+
     # TODO: 给出合适的输出，提示用户输入
     user_keys = get_inputs(hints)
 
